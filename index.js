@@ -20,6 +20,7 @@ module.exports = {
     'airbnb',
     'plugin:@typescript-eslint/recommended',
     'prettier',
+    'prettier/@typescript-eslint',
   ],
   rules: {
     'no-unused-vars': 'off',
