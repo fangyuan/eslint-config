@@ -5,8 +5,15 @@
   "repository": "git@github.com:fangyuan/eslint-config.git",
   "author": "fangyuan <chengfangyuan2008@gmail.com>",
   "license": "GPL-3.0",
-  "description": "ESLint config for TypeScript and React",
+  "description": "config for lint typescript/react/css/scss",
   "private": false,
+  "keywords": [
+    "ESLint",
+    "React",
+    "TypeScript",
+    "Prettier",
+    "Webpack"
+  ],
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^3.9.0",
     "@typescript-eslint/parser": "^3.9.0",
@@ -25,5 +32,12 @@
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-prettier": "^1.1.2",
     "typescript": "^3.9.7"
+  },
+  "peerDependencies": {
+    "react": "^16.8.6",
+    "webpack": "^4.44.1"
+  },
+  "engines": {
+    "node": ">=12"
   }
 }

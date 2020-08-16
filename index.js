@@ -14,18 +14,21 @@ module.exports = {
     ecmaVersion: 6,
     sourceType: 'module',
   },
-  plugins: [
-    '@typescript-eslint',
-    'react-hooks',
-    'import',
-    'json',
-    'prettier',
+  plugins: ['@typescript-eslint', 'react-hooks', 'import', 'json', 'prettier'],
+  extends: [
+    'eslint:recommended',
+    'airbnb',
+    'plugin:@typescript-eslint/recommended',
+    'prettier/@typescript-eslint',
   ],
-  extends: ['eslint:recommended', 'airbnb'],
   rules: {
     'no-unused-vars': 'off',
     'no-useless-constructor': 'off',
-    'react/react-in-jsx-scope': 'off',
+    'prettier/prettier': 'error',
+    'react/jsx-filename-extension': [
+      'warn',
+      { extensions: ['.js', '.jsx', '.tsx'] },
+    ],
     '@typescript-eslint/no-unused-vars': 'error',
     '@typescript-eslint/no-useless-constructor': 'error',
   },
@@ -37,10 +40,6 @@ module.exports = {
     'import/parsers': {
       '@typescript-eslint/parser': ['.ts', '.tsx'],
     },
-    'import/resolver': {
-      node: {
-        extensions: ['.js', '.jsx', '.ts', '.tsx'],
-      },
-    },
+    'import/resolver': 'webpack',
   },
 };
