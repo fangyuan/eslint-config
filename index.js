@@ -22,7 +22,13 @@ module.exports = {
     'prettier',
   ],
   extends: ['eslint:recommended', 'airbnb'],
-  rules: {},
+  rules: {
+    'no-unused-vars': 'off',
+    'no-useless-constructor': 'off',
+    'react/react-in-jsx-scope': 'off',
+    '@typescript-eslint/no-unused-vars': 'error',
+    '@typescript-eslint/no-useless-constructor': 'error',
+  },
   settings: {
     react: {
       version: 'detect',
