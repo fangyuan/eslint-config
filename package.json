@@ -2,6 +2,11 @@
   "name": "eslint-config",
   "version": "0.0.1",
   "main": "index.js",
+  "files": [
+    "index.js",
+    ".prettierrc",
+    ".eslintignore"
+  ],
   "repository": "git@github.com:fangyuan/eslint-config.git",
   "author": "fangyuan <chengfangyuan2008@gmail.com>",
   "license": "GPL-3.0",
