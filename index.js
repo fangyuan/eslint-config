@@ -19,7 +19,7 @@ module.exports = {
     'eslint:recommended',
     'airbnb',
     'plugin:@typescript-eslint/recommended',
-    'prettier/@typescript-eslint',
+    'prettier',
   ],
   rules: {
     'no-unused-vars': 'off',
